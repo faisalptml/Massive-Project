@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pureWhite"
+        tools:context=".LastMaintActivity">
+
+        <LinearLayout
+            android:id="@+id/linearlyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="19dp"
+            app:layout_constraintHorizontal_bias="0.31"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="MissingConstraints,UselessLeaf">
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratbold"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratbold"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry"/>
+
+            <TextView
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratbold"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry"/>
+
+            <TextView
+                android:id="@+id/line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratbold"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry"/>
+
+            <TextView
+                android:id="@+id/line6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratbold"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry"/>
+
+            <TextView
+                android:id="@+id/line7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratbold"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                tools:ignore="HardcodedText,RtlSymmetry"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/line8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratregular"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="#B9B9B9"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry"/>
+
+            <TextView
+                android:id="@+id/line9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserratregular"
+                android:paddingStart="8dp"
+                android:text="_"
+                android:textColor="#B9B9B9"
+                android:textSize="60sp"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="HardcodedText,RtlSymmetry"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Last Maintenance"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.283"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearlyt"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_add2"
+            android:layout_width="340dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="What did you maintain in the last \nschedule?"
+            android:textColor="#b8b8b8"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add1"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tv_add2"-->
+        <!--            tools:ignore="MissingConstraints">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/TxtView1"-->
+        <!--                android:layout_width="350dp"-->
+        <!--                android:layout_height="60dp"-->
+        <!--                android:background="@drawable/bg_chooses"-->
+        <!--                android:fontFamily="@font/montserratregular"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="Air Filter"-->
+        <!--                android:textSize="18sp"-->
+        <!--                tools:ignore="HardcodedText" />-->
+
+        <!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add2"
+        app:layout_constraintVertical_bias="0.027"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="553dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="202dp"
+            tools:ignore="MissingConstraints,RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_lastMain1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Air Filter"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Nuts and Bolts Exhaust"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Cooling Fan Filter"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Valve Tension"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Spark Plug"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Fuel Line"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Engine Oil"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Engine Oil Filter"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Stationary Loop"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Gear Box Oil"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Brake"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Brake Hose"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Brake Fluid"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain14"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Tire"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain15"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Steer"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain16"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Raer Suspension"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain17"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Front Suspension"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain18"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Nuts and Bolts Frame"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/tv_lastMain19"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="Others"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/lastMainBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/costum_whatmain"
+                android:padding="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:textAlignment="center"
+                android:text="I Forgot"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,MissingConstraints"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/botton_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/ractangle_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:gravity="center"
+            tools:ignore="UselessLeaf">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNextTo5"
+                android:layout_width="315dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/costum_button"
+                android:fontFamily="@font/montserratbold"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_time"
+                tools:ignore="HardcodedText,MissingConstraints" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

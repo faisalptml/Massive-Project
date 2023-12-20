@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopUpNotifActivity">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="300dp"
+        android:background="@drawable/rectangle_schedulepop_up"
+        android:backgroundTint="@color/pureWhite"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="133dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/popup_notifpict" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="15dp"
+                android:contentDescription="NULL"
+                android:src="@drawable/cancel"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_profile2">
+
+            <TextView
+                android:id="@+id/notifLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="It's time to"
+                android:gravity="center"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Engine Oil"
+                android:gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnGotIt"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_schedulepop_up"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/primary"
+                    android:text="Got it!"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/pureWhite"
+                    tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

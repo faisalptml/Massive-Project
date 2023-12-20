@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/rectangle_setting"
+        android:backgroundTint="@color/pureWhite"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_width="35dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/cancel"
+            android:importantForAccessibility="no" />
+
+        <ImageView
+            android:id="@+id/pictLoc"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/popup_locationpict"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="160dp"
+            android:text="Update Location Settings"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185dp"
+            android:text="Allow us to access your location so we can\n
+provide workshop recommendations"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/locNo"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botton_no"
+            android:fontFamily="@font/montserratbold"
+            android:text="No, Thanks"
+            android:textSize="15sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="245dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/locYes"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="245dp"
+            android:background="@drawable/rectangle_schedulepop_up"
+            android:backgroundTint="@color/primary"
+            android:text="Allow"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserratbold"
+            android:textAllCaps="false"
+            android:textColor="@color/pureWhite"
+            tools:ignore="HardcodedText" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

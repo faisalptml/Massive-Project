@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    tools:context=".HistoryFragmen">
+
+    <TextView
+        android:id="@+id/rectangle1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rectangle_profile1"
+        android:backgroundTint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/arrow_left"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="ContentDescription,MissingConstraints"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_histories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Histories"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:id="@+id/iv_lineNotif"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="@drawable/line"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_histories"
+        tools:ignore="ContentDescription,MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tv_historiesOnProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Progress"
+        android:fontFamily="@font/montserratregular"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back"
+        tools:ignore="HardcodedText,MissingConstraints"
+        />
+
+    <ImageView
+        android:id="@+id/iv_dotHistories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dot"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_historiesDone"
+        tools:ignore="ContentDescription,MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tv_historiesDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/primary"
+        android:textSize="17sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back"
+        tools:ignore="HardcodedText,MissingConstraints"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_dateHistories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle1"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="75dp">
+
+        <TextView
+            android:id="@+id/tv_dateHistories1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Today"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle1"
+            tools:ignore="HardcodedText,NotSibling"/>
+
+        <TextView
+            android:id="@+id/tv_dateHistories2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserratregular"
+            android:text="|  Monday, 13 November 2023"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle1"
+            tools:ignore="HardcodedText,NotSibling"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rectangleHistoriesDone1"
+        android:layout_width="324dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangle_notif1"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_dateHistories"/>
+
+    <TextView
+        android:id="@+id/tv_rectangleHistoriesDone1_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangle_notif"
+        android:layout_marginEnd="235dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_dateHistories"/>
+
+    <TextView
+        android:id="@+id/tv_motorHistories1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/motor"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="235dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_dateHistories"/>
+
+    <TextView
+        android:id="@+id/tv_textHistories1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Si Merah’s Body"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_dateHistories"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,UnknownId" />
+
+    <TextView
+        android:id="@+id/tv_textHistories1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="already maintained on"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories1_1"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,UnknownId" />
+
+    <TextView
+        android:id="@+id/tv_timeHistories1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/timenotif1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories1_2"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_textHistories1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="180dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Friday, 17 November 2023"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories1_2"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp" />
+
+    <TextView
+        android:id="@+id/tv_textHistories1_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="Today"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories1_3"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp" />
+
+    <LinearLayout
+        android:id="@+id/ll_dateHistories2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rectangleHistoriesDone1"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="75dp">
+
+        <TextView
+            android:id="@+id/tv_dateHistoriesPart2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserratbold"
+            android:text="2 weeks ago"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rectangleNotifSchedule2"
+            tools:ignore="HardcodedText,NotSibling"/>
+
+        <TextView
+            android:id="@+id/tv_dateHistoriesPt2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserratregular"
+            android:text="|  Tuesday, 31 October 2023"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dateHistories2"
+            tools:ignore="HardcodedText,NotSibling"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rectangleHistoriesDone2"
+        android:layout_width="324dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangle_notif2"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_dateHistories2"/>
+
+    <TextView
+        android:id="@+id/tv_rectangleHistoriesDone2_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangle_notif"
+        android:backgroundTint="#C53938"
+        android:layout_marginEnd="235dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_dateHistories2"/>
+
+    <TextView
+        android:id="@+id/tv_mtrHistories2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/motor"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="235dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_dateHistories2"/>
+
+    <TextView
+        android:id="@+id/tv_textHistories2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Si Merah’s Engine Oil"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_dateHistories2"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,UnknownId" />
+
+    <TextView
+        android:id="@+id/tv_textHistories2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="already maintained on"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories2_1"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,UnknownId" />
+
+    <TextView
+        android:id="@+id/tv_timeHistories2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/timenotif2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories2_2"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_textHistories2_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="180dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Tuesday, 31 October 2023"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories2_2"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp" />
+
+    <TextView
+        android:id="@+id/tv_textHistories2_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="2 weeks ago"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textHistories2_3"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

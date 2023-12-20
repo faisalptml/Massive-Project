@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    tools:context=".Angin1Activity">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="58dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserratbold"
+        android:paddingTop="20dp"
+        android:text="Cara Mengisi Angin Ban Tubeles"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:layout_marginTop="15dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Cara mengisi angin ban tubles tidak bisa sembarangan. Berdasarkan maknanya, ban tersebut adalah ban yang didesain tanpa menggunakan ban dalam. Selain itu, memiliki ketahanan yang sangat baik meskipun digunakan untuk berkendara dengan kecepatan tinggi sekalipun."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.05"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Kelebihan dari ban ini adalah tidak mudah bocor. Hal ini berbeda dengan jenis ban yang lainnya. Tubles tidak akan kehilangan angin secara cepat ketika mengalami bocor. Sehingga memudahkan pengguna untuk mencari tambal ban terdekat sehingga tidak cepat kehabisan angin."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Begini Cara Mengisi Ban Tubeles Secara Tepat"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Ban jenis tubles memiliki karakteristik dengan desain yang berbeda. Udara disimpan dalam volume ruangan antara karet dan velg. Kemudian, menerapkan cara mengisi angin yang tepat juga akan mempengaruhi keawetan dari ban itu sendiri. Selain itu, juga harus memperhatikan berbagai hal dalam penggunaan ban tubles tersebut."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Isilah Ban Dengan Nitrogen"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Mungkin banyak yang belum mengetahui bahwa mengisi angin ban tersebut, sebaiknya dengan nitrogen. Udara nitrogen bisa membuat beban ban lebih ringan.\n\n
+
+Apalagi ketika dipakai untuk membawa beban berat. Sehingga lebih cocok untuk perjalanan jauh.\n\n
+
+Cara mengisi angin ban tubles dengan nitrogen dapat memperpanjang usia ban. Hal ini tentu berbeda dengan angin biasa yang kemungkinan memiliki kandungan air didalamnya. Hal ini bisa disebabkan saat terik matahari, banyak udara yang bercampur dengan uap air.\n\n
+
+Pengisiannya sudah tersedia hampir di seluruh tempat. Meskipun harganya lebih mahal, namun kualitasnya terjamin. Akan tetapi, Anda juga harus pastikan tekanan udaranya pas, tidak terlalu kuat ataupun lemah.\n\n
+
+Dibandingkan angin biasa, nitrogen bisa lebih bertahan lama dan optimal menjaga tekanan ban, meski digunakan untuk aktivitas setiap hari. Kandungan nitrogen murni bisa menjaga daya tahan elemen bagian dalam ban. Hal ini baik untuk konstruksi atau rubbernya."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

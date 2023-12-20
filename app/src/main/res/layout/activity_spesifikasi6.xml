@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    tools:context=".Spesifikasi6Activity">
+
+    <LinearLayout
+        android:id="@+id/linearlyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="30dp"
+            android:text="_"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+        <TextView
+            android:id="@+id/line4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+        <TextView
+            android:id="@+id/line5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+        <TextView
+            android:id="@+id/line6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+        <TextView
+            android:id="@+id/line7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratregular"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="#B9B9B9"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+        <TextView
+            android:id="@+id/line8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratregular"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="#B9B9B9"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+        <TextView
+            android:id="@+id/line9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratregular"
+            android:paddingStart="8dp"
+            android:text="_"
+            android:textColor="#B9B9B9"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:text="Add your motorcycle data"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlyt"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="My motorcycle is ..."
+        android:textColor="#b8b8b8"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add1"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_addMotor"
+        android:layout_width="409dp"
+        android:layout_height="312dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add2"
+        app:srcCompat="@drawable/parkingpict"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Last Maintenance"
+        android:textColor="#B9B9B9"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_addMotor"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/lastMaintAdd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/costum_edittext"
+            android:drawableLeft="@drawable/year_motor"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratregular"
+            android:hint="Day, Month, Year"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="#b9b9b9"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNextTo7"
+        android:layout_width="315dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/primary"
+        android:background="@drawable/costum_button"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastMaintAdd"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

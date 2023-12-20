@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".Angin1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Article1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RescheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPassword2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpLupaPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComunityDiscussActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoadingDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaintenanceScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notifScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RescheduleSuccesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApresiasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LenguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingNotifActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PopUpNotif2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PopUpNotifActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PopUpLogOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PopUpEditScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PopUpEditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PopUpAlertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InputSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LastMaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spesifikasi1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUsernameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

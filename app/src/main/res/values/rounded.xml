@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="Corner">
+        <item name="cornerSize">20%</item>
+        <item name="color">#AEB1C1</item>
+    </style>
+    
+</resources>

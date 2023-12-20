@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    tools:context=".RegistActivity">
+
+    <TextView
+        android:id="@+id/tv_regist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_regist2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="Create your account to continue"
+        android:textColor="#b8b8b8"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_regist1"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_regist"
+        android:layout_width="409dp"
+        android:layout_height="312dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_regist2"
+        app:srcCompat="@drawable/registpict"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Email Address"
+        android:textColor="#B9B9B9"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_regist"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/emailHint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/costum_edittext"
+            android:drawableLeft="@drawable/baseline_markunread_24"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratregular"
+            android:hint="your email address"
+            android:padding="22dp"
+            android:textColor="@color/black"
+            android:textColorHint="#b9b9b9"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Password"
+        android:textColor="#B9B9B9"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailHint"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/passwordHint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:inputType="textPassword"
+            android:background="@drawable/costum_edittext"
+            android:hint="Enter your password"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/padlock_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Confirm Password"
+        android:textColor="#B9B9B9"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordHint"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/confirmPasswordHint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:inputType="textPassword"
+            android:background="@drawable/costum_edittext"
+            android:hint="Confirm your password"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:padding="20dp"
+            app:passwordToggleEnabled="true"
+            android:drawableLeft="@drawable/padlock_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@+id/tv_confirmPassword"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registBtnIn"
+        android:layout_width="315dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/Grey"
+        android:background="@drawable/costum_button"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordHint"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_haveAccount"
+        android:layout_width="230dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registBtnIn"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <TextView
+            android:id="@+id/tv_haveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Have an account?"
+            android:textColor="#b3b3b3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_regist"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/toLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Login"
+            android:textColor="#3165CF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_regist"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

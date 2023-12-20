@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pureWhite"
+    tools:context=".HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph"
+        tools:ignore="FragmentTagUsage,MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@drawable/ractangleup"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Si Merah"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="Yamaha"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="63dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            app:shapeAppearanceOverlay="@style/Corner"
+            app:srcCompat="@drawable/motormerah"
+            app:strokeColor="#9DA0AE"
+            app:strokeWidth="1dp" />
+
+        <LinearLayout
+            android:id="@id/linearlyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="63dp"
+                android:layout_height="65dp"
+                app:shapeAppearanceOverlay="@style/Circular"
+                app:srcCompat="@drawable/profile"
+                app:strokeColor="#9DA0AE"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Nurmila F."
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="237dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/montserratregular"
+            android:text=" @mila99"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="666dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="@+id/mainContainer"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearlyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="Ready to know?"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Let’s start with the easy one"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="NULL"
+                android:scrollbars="none"
+                tools:ignore="HardcodedText">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    tools:ignore="ScrollViewSize,UselessLeaf">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="1.43in"
+
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/oil1" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="1.43in"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fuel1" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="1.43in"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/oil2" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="1.43in"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fuel2" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="Long Videos"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="These videos can make you care more \nabout your bike"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="NULL"
+                android:scrollbars="none"
+                tools:ignore="HardcodedText">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    tools:ignore="ScrollViewSize">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="190dp"
+                        android:layout_height="0.95in"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/changeoil" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="190dp"
+                        android:layout_height="0.95in"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/changeoil2" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="190dp"
+                        android:layout_height="0.95in"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/tires1" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="Articles"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Read these articles to get more insight"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints,ScrollViewSize">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.58in"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage">
+
+                    <ImageView
+                        android:id="@+id/tiresPict"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="NULL"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/article1"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.58in"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="NULL"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/article2"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.58in"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="NULL"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/article3"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.58in"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="NULL"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/article4"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/primary"
+        app:itemTextColor="@color/primary"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        android:background="@drawable/rectangle_loading_regist"
+        app:elevation="7dp"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

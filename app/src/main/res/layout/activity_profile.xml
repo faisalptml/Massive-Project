@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/rectangle1"
+        android:layout_width="411dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rectangle_profile1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_profileBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/arrow_left"
+            android:backgroundTint="@color/white"
+            android:contentDescription="NULL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="ContentDescription,HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/mprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="99dp"
+            android:paddingEnd="90dp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/btn_notif"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/notif"
+            android:backgroundTint="@color/white"
+            android:contentDescription="NULL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="ContentDescription,HardcodedText,MissingConstraints" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_profileUser"
+        android:layout_width="128dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_profileBar"
+        app:srcCompat="@drawable/profileuser"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="142dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserratbold"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="Nurmila Fauziyah"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_profileBar"
+        tools:ignore="HardcodedText,MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tv_usernameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserratregular"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="mila99"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fullName"
+        tools:ignore="HardcodedText,MissingConstraints"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEdit"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/costum_button"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usernameProfile"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="445dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UselessLeaf">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rectangle_profile2">
+
+                <TextView
+                    android:id="@+id/txtComun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratbold"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp"
+                    android:text="Communities"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/txtComun2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:paddingStart="25dp"
+                    android:text="Who you follow"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtComun"
+                    tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/txtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:paddingStart="135dp"
+                    android:text="View all"
+                    android:textColor="@color/primary"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txtComun2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtComun"
+                    tools:ignore="HardcodedText,RtlSymmetry,RtlSymmetry" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtComun2"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <!-- Card 1 -->
+                    <RelativeLayout
+                        android:id="@+id/cardBengkel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="91dp"
+                            android:layout_height="79dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bengkel_cantik"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageView1"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Bengkel\nCantik"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+                    </RelativeLayout>
+
+                    <!-- Card 2 -->
+                    <RelativeLayout
+                        android:id="@+id/cardRiders"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="91dp"
+                            android:layout_height="79dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anak_motor"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageView2"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Anak Motor\nBanget"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText" />
+                    </RelativeLayout>
+
+                    <!-- Card 3 -->
+                    <RelativeLayout
+                        android:id="@+id/cardTutor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="91dp"
+                            android:layout_height="79dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/tutor_keren"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageView3"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Tutor\nKeren"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+                    </RelativeLayout>
+
+                    <!-- Card 4 -->
+                    <RelativeLayout
+                        android:id="@+id/cardBuibu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="91dp"
+                            android:layout_height="79dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ibuibu"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageView4"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/montserratregular"
+                            android:text="Ibu-ibu\nMotoran"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rectangle_profile2">
+
+                <TextView
+                    android:id="@+id/settingTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratbold"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp"
+                    android:text="Settings"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/Settingtxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:paddingStart="25dp"
+                    android:text="Let's adjust it to your needs"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/settingTxt"
+                    tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry,RtlSymmetry" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/Settingtxt1"
+                    tools:ignore="MissingConstraints,ScrollViewSize">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.45in"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:id="@+id/notifBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/setting1"
+                            tools:ignore="HardcodedText" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.45in"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:id="@+id/imgBtnLang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/setting2"
+                            tools:ignore="HardcodedText" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.45in"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:id="@+id/btnLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/setting3"
+                            tools:ignore="HardcodedText" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.45in"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="5dp"
+                        tools:ignore="InOrMmUsage">
+
+                        <ImageView
+                            android:id="@+id/outBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="NULL"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/setting4"
+                            tools:ignore="HardcodedText" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

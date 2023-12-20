@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "813390144516",
+    "project_id": "auth-cyclecarein",
+    "storage_bucket": "auth-cyclecarein.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813390144516:android:8417a08b8d7a15f9ff4151",
+        "android_client_info": {
+          "package_name": "com.stupendil.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbJkID4ylNI027KpSEbErbpK6_2jTbN0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

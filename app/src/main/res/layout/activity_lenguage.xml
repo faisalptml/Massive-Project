@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LenguageActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/rectangle_setting"
+        android:backgroundTint="@color/pureWhite"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_width="35dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/cancel"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="22dp"
+            android:text="App's Language"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="82dp"
+            android:contentDescription="NULL"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="150dp"
+            android:contentDescription="NULL"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="82dp"
+            android:text="English"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="105dp"
+            android:text="(device’s languange)"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="150dp"
+            android:text="Bahasa Indonesia"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="170dp"
+            android:text="Indonesian"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,SpUsage" />
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

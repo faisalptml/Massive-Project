@@ -1,0 +1,709 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ScheduleFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_scheduleBar"
+        android:layout_width="355dp"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <ImageView
+            android:id="@+id/btnGoback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/arrow_left"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="Maintenance Schedule"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/btnGonotif"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/notif"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="ContentDescription,MissingConstraints" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_odometer"
+        android:layout_width="160dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_scheduleBar"
+        app:srcCompat="@drawable/odometer"
+        android:contentDescription="null"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_kmRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_odometer"
+        tools:ignore="MissingConstraints,Orientation,UselessLeaf"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/et_km2"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratbold"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/white"
+            android:drawablePadding="8dp"
+            android:paddingStart="13dp"
+            android:layout_gravity="center"
+            android:text="2"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km3"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratbold"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/white"
+            android:drawablePadding="8dp"
+            android:paddingStart="13dp"
+            android:layout_gravity="center"
+            android:text="7"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km4"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratbold"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/white"
+            android:drawablePadding="8dp"
+            android:paddingStart="13dp"
+            android:layout_gravity="center"
+            android:text="2"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km5"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratbold"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/white"
+            android:drawablePadding="8dp"
+            android:paddingStart="13dp"
+            android:layout_gravity="center"
+            android:text="1"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km6"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratbold"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/white"
+            android:drawablePadding="8dp"
+            android:paddingStart="13dp"
+            android:layout_gravity="center"
+            android:text="9"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km7"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratbold"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/white"
+            android:drawablePadding="8dp"
+            android:paddingStart="13dp"
+            android:layout_gravity="center"
+            android:text="8"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_prediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserratbold"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="Oil Change Prediction"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_kmRectangle"
+        tools:ignore="HardcodedText,MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tv_datePrediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserratregular"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="23 November 2023"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prediction"
+        tools:ignore="HardcodedText,MissingConstraints"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="@drawable/rectangle_setting"
+        android:backgroundTint="@color/pureWhite"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_searchSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/costum_edittext"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratregular"
+            android:hint="Find your schedule"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#b9b9b9"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_datePrediction"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                tools:ignore="ScrollViewCount,UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Friday, 17 November 2023"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.31"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/et_searchSchedule"
+                        tools:ignore="HardcodedText,MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/tv_date2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="4 days left"
+                        android:textAlignment="textStart"
+                        android:textColor="#b8b8b8"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.168"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_date1"
+                        tools:ignore="HardcodedText,MissingConstraints" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/tv_rectangleSchedule1"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="48dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangle_schedule"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <ImageView
+                            android:id="@+id/tv_motorSchedule1"
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="58dp"
+                            android:background="@drawable/motor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <Switch
+                            android:id="@+id/switch6"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="5dp"
+                            tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="98dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Fix Si Merah’s \nBody"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_motorSchedule1"
+                            tools:ignore="HardcodedText,MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="145dp"
+                            android:drawableLeft="@drawable/time"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Friday, 17 November 2023 \n4 days left"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp,UseCompatTextViewDrawableXml" />
+
+                        <ImageView
+                            android:id="@+id/tv_rectangleSchedule2"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="213dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangle_schedule"
+                            android:backgroundTint="@color/softYellow"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <ImageView
+                            android:id="@+id/tv_motorSchedule2"
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="220dp"
+                            android:background="@drawable/motor"
+                            android:backgroundTint="#FF8900"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <Switch
+                            android:id="@+id/switch7"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="315dp"
+                            android:layout_marginTop="5dp"
+                            tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="222dp"
+                            android:layout_marginTop="98dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Change Engine \nOil"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_motorSchedule1"
+                            tools:ignore="HardcodedText,MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="222dp"
+                            android:layout_marginTop="145dp"
+                            android:drawableLeft="@drawable/time2"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Friday, 17 November 2023 \n4 days left"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp,UseCompatTextViewDrawableXml" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="44dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Saturday, 18 November 2023"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.31"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_rectangleSchedule1"
+                        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tv_date4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="5 days left"
+                        android:textAlignment="textStart"
+                        android:textColor="#b8b8b8"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.168"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_date3"
+                        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/tv_rectangleSchedule3"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="48dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangle_schedule"
+                            android:backgroundTint="#6B2434"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <ImageView
+                            android:id="@+id/tv_motorSchedule3"
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="58dp"
+                            android:background="@drawable/motor"
+                            android:backgroundTint="#D60909"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <Switch
+                            android:id="@+id/switch8"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="5dp"
+                            tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="98dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Fill Si Merah’s \nAir Tires"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_motorSchedule3"
+                            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule4_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="145dp"
+                            android:drawableLeft="@drawable/time4"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Friday, 17 November 2023 \n4 days left"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp,UseCompatTextViewDrawableXml" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_date7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="44dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="Sunday, 19 November 2023"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.31"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_rectangleSchedule1"
+                        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tv_date8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="6 days left"
+                        android:textAlignment="textStart"
+                        android:textColor="#b8b8b8"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.168"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_date3"
+                        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/tv_rectangleSchedule5"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="48dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangle_schedule"
+                            android:backgroundTint="@color/primary"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <ImageView
+                            android:id="@+id/tv_motorSchedule5"
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="58dp"
+                            android:background="@drawable/motor"
+                            android:backgroundTint="@color/maroon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+                            tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+                        <Switch
+                            android:id="@+id/switch9"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="5dp"
+                            tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule6_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="98dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Fix Si Merah’s \nBody"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_motorSchedule3"
+                            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/tv_textSchedule5_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="145dp"
+                            android:drawableLeft="@drawable/time3"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/montserratbold"
+                            android:text="Friday, 17 November 2023 \n4 days left"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+                            tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp,UseCompatTextViewDrawableXml" />
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/botton_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@drawable/ractangle_bottom"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            tools:ignore="ContentDescription,MissingConstraints"
+                            tools:layout_editor_absoluteX="4dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            tools:ignore="UselessLeaf">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnNextTo5"
+                                android:layout_width="315dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/costum_button"
+                                android:fontFamily="@font/montserratbold"
+                                android:text="Create a schedule"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/et_time"
+                                tools:ignore="HardcodedText,MissingConstraints" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pureWhite"
+    tools:context=".ChatBotFragmen">
+
+    <TextView
+        android:id="@+id/rectangle1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rectangle_profile1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_profileBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_left"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"/>
+
+        <ImageView
+            android:id="@+id/btn_volume"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/volume"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="250dp"
+            android:contentDescription="NONE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:id="@+id/btn_send"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/send"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            android:contentDescription="NULL"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_bot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bot"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_botName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CycleCare Bot"
+        android:fontFamily="@font/montserratbold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_botStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Online"
+        android:fontFamily="@font/montserratbold"
+        android:textSize="15sp"
+        android:textColor="#3ABF38"
+        android:layout_marginStart="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="75dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bgBot"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle1"
+        app:srcCompat="@drawable/bg_bot"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Mila99!"
+        android:textSize="18sp"
+        android:textColor="#A9A9A9"
+        android:fontFamily="@font/montserratbold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bgBot"
+        app:srcCompat="@drawable/bg_bot"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_greetings2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How can i help you today?"
+        android:textSize="15sp"
+        android:textColor="#A9A9A9"
+        android:fontFamily="@font/montserratregular"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_greetings"
+        app:srcCompat="@drawable/bg_bot"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_lastMain"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_greetings2"
+        app:srcCompat="@drawable/bg_bot"
+        tools:ignore="ContentDescription,MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_lastMain1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/costum_whatmain"
+            android:padding="15dp"
+            android:fontFamily="@font/montserratregular"
+            android:textAlignment="center"
+            android:text="How to change engine oil?  "
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/tv_lastMain2"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/costum_whatmain"
+            android:padding="15dp"
+            android:fontFamily="@font/montserratregular"
+            android:textAlignment="center"
+            android:text="How to change engine oil filter?  "
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/tv_lastMain3"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/costum_whatmain"
+            android:padding="15dp"
+            android:fontFamily="@font/montserratregular"
+            android:textAlignment="center"
+            android:text="How to change cooling fan filter?  "
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_chat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/costum_edittext"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/group_chat"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/montserratregular"
+        android:hint="Write your message "
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#b9b9b9"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="Autofill,TextFields" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

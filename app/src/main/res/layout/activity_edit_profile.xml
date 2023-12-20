@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    tools:context=".EditProfileActivity">
+
+    <TextView
+        android:id="@+id/rectangle1"
+        android:layout_width="432dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rectangle_profile1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_profileBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_left"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="NULL"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="65dp"
+            android:paddingEnd="85dp"
+            android:text="Edit Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/rectangle_loading_regist"
+        android:backgroundTint="#f5f5f5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_profileBar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_profileUserEdit"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_profileBar"
+        app:srcCompat="@drawable/profileuser"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Email Address"
+        android:textColor="#B9B9B9"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profileUserEdit"
+        tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/et_editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:hint="nurmilafauziyah31@gmail.com"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="@color/black"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/baseline_markunread_24"
+            app:layout_constraintTop_toBottomOf="@+id/tv_editEmail"
+            tools:ignore="Autofill,TextFields" />
+
+
+    <TextView
+        android:id="@+id/tv_editUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:text="Username"
+        android:textColor="#B9B9B9"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_editEmail"
+        tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/et_editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginTop="5dp"
+            android:hint="mila99"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="@color/black"
+            android:padding="15dp"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/group"
+            app:layout_constraintTop_toBottomOf="@+id/tv_editUsername"
+            tools:ignore="Autofill,TextFields" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/primary"
+        android:background="@drawable/costum_button"
+        android:text="Save Changes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_editUsername"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
